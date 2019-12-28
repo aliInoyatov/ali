@@ -22,6 +22,7 @@ public class AI {
         Deque<Cell> someRoute = dynamicAI(curGoalList);
         if (bestLambdaCollected < curGoalList.indexOf(someRoute.getFirst())) {
             bestLambdaCollected = curGoalList.indexOf(someRoute.getFirst());
+
             bestRoute = someRoute;
         }
         curGoalList = getListOfGoal(field.robot, true, true);
