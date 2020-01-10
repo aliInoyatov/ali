@@ -65,6 +65,8 @@ public class AI {
                 bestCell = (Cell) entry.getKey();
             }
         }
+
+
         return bestCell;
     }
 
